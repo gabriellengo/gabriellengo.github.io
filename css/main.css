@@ -1,1 +1,7 @@
-
+/* defaults */
+body {
+  background-color: cyan;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: .8rem;
+  color: #444444;
+}
