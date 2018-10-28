@@ -1,4 +1,4 @@
-/* defaults main components */
+/* defaults / main components */
 
 body {
 	background-color: white;
@@ -12,13 +12,16 @@ body {
 	width: 20%;
 	top: 0rem;
 	left: 0rem;
+	padding: .75rem;
 	position: fixed;
 }
 
-#navbar a {
+#navbar .nav {
 	font-family: 'Montserrat', 'Trebuchet MS', Helvetica, sans-serif;
 	font-size: 1rem;
 	color: orange;
+	display: block;
+	margin: .5rem 0 .5rem 0;
 }
 
 /* classes */
