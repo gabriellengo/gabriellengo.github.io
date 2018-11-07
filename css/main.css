@@ -1,28 +1,104 @@
-/* defaults / main components */
-
+/* defaults */
 body {
-	background-color: white;
-	font-family: Helvetica, Arial, Sans-Serif;
-	font-size: .8rem;
-	color: #444444;
+  background-color: grey;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #333333;
 }
 
-#navbar {
-	background-color: grey;
-	width: 20%;
-	height: 100%!important;
-	top: 0rem;
-	left: 0rem;
-	padding: .75rem;
-	position: fixed;
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #333333;
+  margin: 0 0 .75rem 0;
 }
 
-#navbar .nav {
-	font-family: 'Montserrat', 'Trebuchet MS', Helvetica, sans-serif;
-	font-size: 1rem;
-	color: orange;
-	display: block;
-	margin: .5rem 0 .5rem 1rem;
+.white {
+  margin: .25rem 0 .75rem 0;
+  color: white;
+  text-align: center;
 }
 
-/* classes */
+.shrink {
+  font-size: 1.5rem;
+}
+
+.logo-img {
+  width: 3rem;
+  border: none;
+}
+
+.logo-img:hover {
+  border: none;
+}
+
+a {
+  transition-duration: .65s;
+  -webkit-transition-duration: .65s;
+  -o-transition-duration: .65s;
+  -moz-transition-duration: .65s;
+}
+
+/* center body */
+.intro {
+  background-color: #333333;
+  padding: 1.5rem;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.intro-container {
+  width: 50%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin: 10rem auto 7rem;
+}
+
+.container-style {
+  background-image: url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg');
+  background-size: cover;
+  max-width: 100%;
+}
+
+.boxed-info {
+  padding: 1rem;
+  background-color: #a5a5af;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.user-links, .user-links a {
+  color: white;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.user-links a {
+  display: inline-block;
+  padding: .3rem;
+  background-color: transparent;
+}
+
+.user-links a:hover {
+  background-color: #a5a5af;
+  color: white;
+  text-decoration: none;
+}
+
+/* navbar */ 
+.navbar-style, .navbar-style a {
+  background-color: #57bc90;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.navbar-style a:hover {
+  color: #ffffff;
+}
