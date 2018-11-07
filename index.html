@@ -1,23 +1,106 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>gabrielle ngo</title>
-		<link href="css/main.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-	</head>
-	<body>
-		
-		<!-- navigation -->
-		<div id="navbar">
-			<h3>gabrielle ngo</h3>
-			<br>
-			<span class="nav">about</span>
-			<span class="nav">works</span>
-			<span class="nav">resume</span>
-			<span class="nav">message</span>
-		</div>
-		
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Poppins:700" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar fixed-top navbar-style">
+      <div class="container-fluid">
+       <div class="navbar-header">
+         <img class="navbar-brand logo-img" src="https://gabriellengo.files.wordpress.com/2018/11/moolahlogo.png">
+        <a class="navbar-brand" href="#">moolah</a>
+       </div>
+      <ul class="nav navbar-nav"></ul>
+    </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container-fluid container-style">
+
+      <!-- intro -->
+      <div class="row no-gutters">
+        <div class="intro-container">
+
+          <!-- links -->
+          <div class="user-links">
+            <a href="/" data-toggle="modal" data-target="#exampleModal">Login</a> &nbsp; <b>|</b> &nbsp; <a href="/">Sign Up</a>
+          </div>
+
+          <!-- title -->
+          <div class="title white">How Do You Manage Your Moolah?</div>
+
+            <!-- intro text -->
+            <div class="intro">
+              <p>Need to stay on top of your expenses and budget? Look no further! Moolah is designed to help you keep
+                track of your daily expenses so your wallet never empties. Add expenses and income, manage your budget, 
+                and see how you manage your expenses year-to-year. It's easy to get started, just log in or sign up, it's free!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- boxed info -->
+      <div class="row boxed-info">
+        <!-- one -->
+        <div class="col-md-4">
+          <div class="title white shrink">Who We Are</div>
+          <p>We are a small team that built this web application to help you manage your
+            expenses in the simplest way possible. We help you do all the calculations
+            so that you don't have to!
+          </p>
+        </div>
+
+        <!-- two -->
+        <div class="col-md-4">
+          <div class="title white shrink">What We Offer</div>
+          <p>We offer a simple platform that allows you to easily add expenses and income.
+            Add a budget or income goal to help you stay on track! View your expenses through
+            different categories and visually watch your progress for the month.
+          </p>
+        </div>
+
+        <!-- three -->
+        <div class="col-md-4">
+          <div class="title white shrink">Contact Us</div>
+          <p>Have any questions or comments? Feel free to contact us
+            with the information below!<br></p>
+
+          <p><b>e-mail</b>: moolahcontact@gmail.com<br>
+        </div>
+      </div>
+
+      <!-- modal test -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
