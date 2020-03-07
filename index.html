@@ -1,106 +1,54 @@
+<!-- gabriellengo.github.io
+
+personal site
+version 1.0
+launch date -- 
+
+-------------------------->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>gabrielle ngo</title>
+
     <link href="style.css" rel="stylesheet" type="text/css" />
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Poppins:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:600&display=swap" rel="stylesheet">
   </head>
-  
+
+ 
   <body>
-    <!-- nav bar -->
-    <nav class="navbar fixed-top navbar-style">
-      <div class="container-fluid">
-       <div class="navbar-header">
-         <img class="navbar-brand logo-img" src="https://gabriellengo.files.wordpress.com/2018/11/moolahlogo.png">
-        <a class="navbar-brand" href="#">moolah</a>
-       </div>
-      <ul class="nav navbar-nav"></ul>
-    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-5">
+      <a class="navbar-brand" href="/"><img class ="logo-img" src="https://user-images.githubusercontent.com/28766641/76151466-f4f20600-607a-11ea-84b2-e2539700e058.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link nav-style " href="#">about <span class="sr-only">(current)</span></a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link nav-style" href="#">work</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link nav-style" href="#">contact</a>
+         </li>
+      </div>
     </nav>
 
-    <!-- content -->
-    <div class="container-fluid container-style">
-
-      <!-- intro -->
-      <div class="row no-gutters">
-        <div class="intro-container">
-
-          <!-- links -->
-          <div class="user-links">
-            <a href="/" data-toggle="modal" data-target="#exampleModal">Login</a> &nbsp; <b>|</b> &nbsp; <a href="/">Sign Up</a>
-          </div>
-
-          <!-- title -->
-          <div class="title white">How Do You Manage Your Moolah?</div>
-
-            <!-- intro text -->
-            <div class="intro">
-              <p>Need to stay on top of your expenses and budget? Look no further! Moolah is designed to help you keep
-                track of your daily expenses so your wallet never empties. Add expenses and income, manage your budget, 
-                and see how you manage your expenses year-to-year. It's easy to get started, just log in or sign up, it's free!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- boxed info -->
-      <div class="row boxed-info">
-        <!-- one -->
-        <div class="col-md-4">
-          <div class="title white shrink">Who We Are</div>
-          <p>We are a small team that built this web application to help you manage your
-            expenses in the simplest way possible. We help you do all the calculations
-            so that you don't have to!
-          </p>
-        </div>
-
-        <!-- two -->
-        <div class="col-md-4">
-          <div class="title white shrink">What We Offer</div>
-          <p>We offer a simple platform that allows you to easily add expenses and income.
-            Add a budget or income goal to help you stay on track! View your expenses through
-            different categories and visually watch your progress for the month.
-          </p>
-        </div>
-
-        <!-- three -->
-        <div class="col-md-4">
-          <div class="title white shrink">Contact Us</div>
-          <p>Have any questions or comments? Feel free to contact us
-            with the information below!<br></p>
-
-          <p><b>e-mail</b>: moolahcontact@gmail.com<br>
-        </div>
-      </div>
-
-      <!-- modal test -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-  
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
