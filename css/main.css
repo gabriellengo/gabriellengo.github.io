@@ -1,104 +1,21 @@
-/* defaults */
+/* default attributes */
+
 body {
-  background-color: grey;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #333333;
+  background: #ffffff;
+
 }
 
-.title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  color: #333333;
-  margin: 0 0 .75rem 0;
+h1, h2, h3, h4 {
+  font-family: 'Fira Mono', monospace;
 }
 
-.white {
-  margin: .25rem 0 .75rem 0;
-  color: white;
-  text-align: center;
-}
-
-.shrink {
-  font-size: 1.5rem;
-}
-
+/* classes */
 .logo-img {
-  width: 3rem;
-  border: none;
+  max-width: 15rem;
 }
 
-.logo-img:hover {
-  border: none;
-}
-
-a {
-  transition-duration: .65s;
-  -webkit-transition-duration: .65s;
-  -o-transition-duration: .65s;
-  -moz-transition-duration: .65s;
-}
-
-/* center body */
-.intro {
-  background-color: #333333;
-  padding: 1.5rem;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  text-align: center;
-  line-height: 1.75rem;
-}
-
-.intro-container {
-  width: 50%;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  margin: 10rem auto 7rem;
-}
-
-.container-style {
-  background-image: url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg');
-  background-size: cover;
-  max-width: 100%;
-}
-
-.boxed-info {
-  padding: 1rem;
-  background-color: #a5a5af;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  color: white;
-  text-align: center;
-}
-
-.flex-grow {
-  flex: 1 0 auto;
-}
-
-.user-links, .user-links a {
-  color: white;
-  text-align: center;
-  margin: 0 0 1.5rem 0;
-}
-
-.user-links a {
-  display: inline-block;
-  padding: .3rem;
-  background-color: transparent;
-}
-
-.user-links a:hover {
-  background-color: #a5a5af;
-  color: white;
-  text-decoration: none;
-}
-
-/* navbar */ 
-.navbar-style, .navbar-style a {
-  background-color: #57bc90;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.navbar-style a:hover {
-  color: #ffffff;
+.nav-style {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+  text-transform: lowercase;
 }
