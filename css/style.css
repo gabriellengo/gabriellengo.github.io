@@ -1,0 +1,55 @@
+/* default attributes */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,600&display=swap');
+
+html, body {
+  background: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .9rem;
+  line-height: 1.65rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+bold_h2 {
+  font-weight: 600;
+}
+a, a:hover {
+  transition-duration: .35s;
+}
+
+a {
+  color: #d95d39;
+}
+
+a:hover {
+  color: #f18805; 
+  text-decoration: none;
+  border-bottom: 2px solid #f18805;
+}
+
+/* classes */
+.logo-img {
+  max-width: 15rem;
+}
+
+.profile-img {
+  max-width: 100%;
+}
+
+/* bootstrap override css */
+.navbar a:link, 
+.navbar a:hover, 
+.navbar a:visited {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.active a {
+  color: #29267e!important;
+}
