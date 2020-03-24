@@ -1,14 +1,15 @@
-Options +FollowSymLinks -MultiViews
-# Turn mod_rewrite on
-RewriteEngine On
-RewriteBase /
+# mod_rewrite starts here
 
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule (.*) $1\.php [L]
+RewriteEngine on
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+dirname/([^\s]+) [NC]
-RewriteRule ^ %1 [R=301,L]
+# does not apply to existing directories > folder exists on sever, don't change and don't run rule
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (?!^dirname/)^(.*)$ /dirname/$1 [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in directory with .html exists
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# show actual page
+
+RewriteRule ^(.*)$ $1.html [NC,L]
