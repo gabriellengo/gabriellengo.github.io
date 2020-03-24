@@ -35,7 +35,11 @@ a:hover {
 }
 
 .ovl-txt {
-  font-size: 4rem;
+  .opacity: 0!important;
+}
+
+.ovl-txt:hover {
+  opacity: 1!important;
 }
 .profile-img {
   max-width: 100%;
