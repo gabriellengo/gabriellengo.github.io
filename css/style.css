@@ -34,12 +34,8 @@ a:hover {
   max-width: 15rem;
 }
 
-.ovl-text {
-  opacity: 0;
-}
-
-.ovl-text:hover {
-  opacity: 1;
+.ovl-txt {
+  opacity: 0!important;
 }
 
 .profile-img {
@@ -47,6 +43,10 @@ a:hover {
 }
 
 /* bootstrap override css */
+.active a {
+  color: #29267e!important;
+}
+
 .navbar a:link,
 .navbar a:hover,
 .navbar a:visited {
@@ -56,8 +56,4 @@ a:hover {
   text-transform: lowercase;
   text-decoration: none;
   border-bottom: none;
-}
-
-.active a {
-  color: #29267e!important;
 }
