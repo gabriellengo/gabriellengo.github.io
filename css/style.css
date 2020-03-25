@@ -40,6 +40,11 @@ a:hover {
   max-width: 15rem;
 }
 
+.navbar-toggler {
+  border: none;
+  border-radius: none;
+}
+
 .no-marg-pad {
   padding-left: 0px!important;
   padding-right: 0px!important;
