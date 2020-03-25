@@ -8,15 +8,17 @@ html, body {
   line-height: 1.65rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Work Sans', sans-serif;
 }
 
-bold_h2 {
-  font-weight: 600;
+h1 {
+  font-size: 2.5rem;
+}
+
 }
 a, a:hover {
-  transition-duration: .35s;
+  transition-duration: .75s;
 }
 
 a {
@@ -29,9 +31,18 @@ a:hover {
   border-bottom: 2px solid #f18805;
 }
 
+.w-65 {
+  width: 65%!important;
+}
+
 /* classes */
 .logo-img {
   max-width: 15rem;
+}
+
+.no-marg-pad {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
 }
 
 .ovl-img,
@@ -62,6 +73,7 @@ a:hover {
 .ovl-txt a:hover {
   color: #ffffff!important;
   text-transform: lowercase;
+  border-bottom: none;
 }
 
 .ovl-txt:hover {
