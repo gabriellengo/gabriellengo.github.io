@@ -41,6 +41,31 @@ a:hover {
 }
 
 /*** ADDITIONNAL CLASSES ***/
+.hvr-rmv,
+.hvr-rmv a,
+.hvr-rmv a:hover {
+  text-decoration: none;
+  border: 0px;
+}
+
+.hvr-rmv img {
+  opacity: 1;
+  background-color: transparent;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  -moz-transition: .5s ease;
+}
+
+.hvr-rmv img:hover {
+  opacity: .6;
+  background-color: #000000;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  -moz-transition: .5s ease;
+}
+
 .logo-img {
   max-width: 15rem;
 }
@@ -97,6 +122,27 @@ a:hover {
 /*** BOOTSTRAP OVERRIDE ***/
 .active a {
   color: #29267e!important;
+}
+
+.modal-backdrop {
+  background-color: #ffffff;
+  opacity: .80!important;
+}
+
+.modal-content,
+.modal-dialog {
+  background-color: transparent;
+  border: none!important;
+  border-radius: none!important;
+}
+
+.modal-backdrop,
+.modal-content a,
+.modal-content a:hover,
+.modal-dialog a,
+.modal-dialog a:hover {
+  text-decoration: none;
+  border: none;
 }
 
 .navbar a:link,
