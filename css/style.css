@@ -19,6 +19,9 @@ h1 {
 }
 a, a:hover {
   transition-duration: .75s;
+  -webkit-transition-duration: .75s;
+  -o-transition-duration: .75s;
+  -moz-transition-duration: .75s;
 }
 
 a {
