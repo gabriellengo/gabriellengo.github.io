@@ -1,10 +1,10 @@
-/* default attributes */
+/*** DEFAULT ATTRIBUTES ***/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,600&display=swap');
 
 html, body {
   background: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.65rem;
 }
 
@@ -31,11 +31,16 @@ a:hover {
   border-bottom: 2px solid #f18805;
 }
 
+/* width classes */
 .w-65 {
   width: 65%!important;
 }
 
-/* classes */
+.w-80 {
+  width: 80%!important;
+}
+
+/*** ADDITIONNAL CLASSES ***/
 .logo-img {
   max-width: 15rem;
 }
@@ -89,7 +94,7 @@ a:hover {
   max-width: 100%;
 }
 
-/* bootstrap override css */
+/*** BOOTSTRAP OVERRIDE ***/
 .active a {
   color: #29267e!important;
 }

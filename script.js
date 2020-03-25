@@ -4,16 +4,8 @@ sr.reveal('.navbar', {delay: 200});
 sr.reveal('.container', {delay: 750});
 sr.reveal('.container-fluid', {delay: 750});
 
-// fancybox
-$('[data-fancybox="images"]').fancybox({
-  buttons : [
-    'slideShow',
-    'share',
-    'zoom',
-    'fullScreen',
-    'close'
-  ],
-  thumbs : {
-    autoStart : true
-  }
+// photo lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
 });
