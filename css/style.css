@@ -5,23 +5,14 @@ html, body {
   background: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
-  line-height: 1.65rem;
+  text-align: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Work Sans', sans-serif;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-}
 a, a:hover {
-  transition-duration: .75s;
-  -webkit-transition-duration: .75s;
-  -o-transition-duration: .75s;
-  -moz-transition-duration: .75s;
+  transition: all .35s ease;
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  -moz-transition: all .35s ease;
 }
 
 a {
@@ -32,6 +23,25 @@ a:hover {
   color: #f18805;
   text-decoration: none;
   border-bottom: 2px solid #f18805;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-weight: 400;
+}
+i {
+  color: #29267e;
+}
+
+p {
+  line-height: 2;
 }
 
 /* width classes */
@@ -51,7 +61,7 @@ a:hover {
   font-family: 'Work Sans', sans-serif;
 }
 .d1 {
-
+  line-height: 2;
 }
 .d2 {
   color: #c1d22f;
