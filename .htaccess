@@ -9,9 +9,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # show actual page
-
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} (.+)/$
-RewriteRule ^ %1 [R=301,L]
