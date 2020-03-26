@@ -1,5 +1,5 @@
 /*** DEFAULT ATTRIBUTES ***/
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,500,600&display=swap');
 
 html, body {
   background: #ffffff;
@@ -44,6 +44,25 @@ a:hover {
 }
 
 /*** ADDITIONNAL CLASSES ***/
+
+.d1,
+.d2,
+.d3 {
+  font-family: 'Work Sans', sans-serif;
+}
+.d1 {
+
+}
+.d2 {
+  color: #c1d22f;
+  font-weight: 500;
+}
+
+.d3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
 .hvr-rmv,
 .hvr-rmv a,
 .hvr-rmv a:hover {
