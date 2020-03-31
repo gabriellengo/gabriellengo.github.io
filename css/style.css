@@ -73,6 +73,14 @@ p {
   line-height: 1.5;
 }
 
+.d-img,
+.d-img img {
+  width: 55%;
+  align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .hvr-rmv,
 .hvr-rmv a,
 .hvr-rmv a:hover {
