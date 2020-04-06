@@ -67,6 +67,10 @@ p {
   line-height: 2;
 }
 
+td {
+  width: 25%;
+}
+
 ul {
   margin: 0 3.5rem;
 }
@@ -204,6 +208,18 @@ ul {
 
 .st-1 {
   margin-top: 1.5rem;
+}
+
+.tab-1 {
+  font-size: 2rem;
+}
+
+.tab-yes {
+  color: #c1d22f!important;
+}
+
+.tab-no {
+  color: #d95d39!important;
 }
 
 /*** BOOTSTRAP OVERRIDE ***/
