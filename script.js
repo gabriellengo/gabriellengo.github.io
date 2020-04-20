@@ -8,3 +8,6 @@ window.sr = ScrollReveal();
 sr.reveal('.navbar', {delay: 200});
 sr.reveal('.container', {delay: 750});
 sr.reveal('.container-fluid', {delay: 750});
+
+// baguetteBox
+baguetteBox.run('.gallery-1');
