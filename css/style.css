@@ -1,6 +1,7 @@
-/*** DEFAULT ATTRIBUTES ***/
+/*** font import ***/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,500,600&display=swap');
 
+/*** default attributes ***/
 html, body {
   background: #ffffff;
   color: #3d3d3d;
@@ -80,7 +81,7 @@ td {
   width: 80%!important;
 }
 
-/*** ADDITIONNAL CLASSES ***/
+/*** additional classes ***/
 
 .d1,
 .d2,
@@ -150,6 +151,12 @@ td {
   border-radius: none;
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 2rem;
+  }
+}
+
 .no-marg-pad {
   padding-left: 0px!important;
   padding-right: 0px!important;
@@ -217,7 +224,8 @@ td {
 .tab-no {
   color: #d95d39!important;
 }
-/*** BOOTSTRAP OVERRIDE ***/
+
+/*** bootstrap override (main) ***/
 .active a {
   color: #29267e!important;
 }
@@ -258,7 +266,17 @@ td {
   border-bottom: none;
 }
 
-/*** BAGUETTE BOX & GALLERY-1 ***/
+@media (max-width: 768px) {
+ .nav-link {
+    text-align: center;
+  }
+}
+
+/*** baguette box gallery ***/
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
 .container.gallery-container {
     background-color: #fff;
     color: #35373a;
@@ -310,14 +328,4 @@ td {
 .gallery-1 .lightbox:hover:after,
 .gallery-1 .lightbox:hover:before {
     opacity: 1;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
 }
