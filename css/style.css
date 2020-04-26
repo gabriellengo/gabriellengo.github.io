@@ -209,6 +209,18 @@ td {
   margin-bottom: 2.25rem;
 }
 
+.so-ico,
+.so-ico a,
+.so-ico:hover,
+.so-ico a:hover {
+  font-size: 1.5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  text-decoration: none;
+  border-bottom: 0px;
+}
+
+
 .st-1 {
   margin-top: 1.5rem;
 }
