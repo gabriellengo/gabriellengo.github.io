@@ -71,6 +71,22 @@ td {
 }
 
 /* width classes */
+.w-40 {
+  width: 40%!important;
+}
+
+@media (max-width: 576px) {
+  .w-40 {
+    width: 80%!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-40 {
+    width: 80%!important;
+  }
+}
+
 .w-65 {
   width: 65%!important;
 }
@@ -165,6 +181,57 @@ td {
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   -moz-transition: .5s ease;
+}
+
+.intro-body,
+.intro-font,
+.intro-nav {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.intro-body {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.intro-font {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.intro-nav {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.intro-nav a,
+.intro-nav a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  display: inline-block;
+  margin: auto .65rem;
+}
+
+.intro-nav a {
+  color: #0e1428;
+}
+
+.intro-nav a:hover {
+  color: #d95d39;
+}
+
+.intro-1 {
+  font-size: 1.25rem;
+}
+
+.landing {
+  background-color: #c1d22f;
+  height: 100vh;
 }
 
 .logo-img {
@@ -267,8 +334,8 @@ td {
 .so-ico a:hover {
   color: #d95d39;
   transform: scale(1.2);
+  border-bottom: none;
 }
-
 
 .st-1 {
   margin-top: 1.5rem;
