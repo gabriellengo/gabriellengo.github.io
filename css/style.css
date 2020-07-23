@@ -1,5 +1,6 @@
 /*** font import ***/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Work+Sans:400,500,600&display=swap');
+@import url("https://use.typekit.net/laj3ikm.css");
 
 /*** default attributes ***/
 html, body {
@@ -16,16 +17,16 @@ a, a:hover {
   -webkit-transition: all .35s ease;
   -o-transition: all .35s ease;
   -moz-transition: all .35s ease;
+  text-decoration: none;
 }
 
 a {
-  color: #d95d39;
+  color: #2323b5;
 }
 
 a:hover {
-  color: #f18805;
+  color: #c0204f;
   text-decoration: none;
-  border-bottom: 2px solid #f18805;
 }
 
 blockquote {
@@ -50,7 +51,8 @@ blockquote li:first-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: paralucent, sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -97,9 +99,11 @@ td {
 
 /*** additional classes ***/
 .button-a {
-  background-color: #d95d39;
-  font-family: 'Work Sans', sans-serif;
+  background-color: #c0204f;
+  font-family: paralucent, sans-serif;
   font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
   color: #ffffff;
   padding: .8rem;
   padding-left: 2rem;
@@ -115,6 +119,7 @@ td {
 
 .button-a a {
   color: #ffffff;
+  font-weight: 400;
   text-decoration: none;
   border: none;
 }
@@ -126,7 +131,8 @@ td {
 .d1,
 .d2,
 .d3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: paralucent, sans-serif;
+  font-weight: 400;
 }
 .d1 {
   line-height: 2;
@@ -187,7 +193,8 @@ td {
 .intro-font,
 .intro-nav {
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: paralucent, sans-serif;
+  font-weight: 400;
 }
 
 .intro-body {
@@ -235,7 +242,21 @@ td {
 }
 
 .logo-img {
-  max-width: 15rem;
+  max-width: 7.5rem;
+}
+
+/* image rotate */
+.rotate
+{
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .navbar-toggler {
@@ -332,7 +353,7 @@ td {
 
 .so-ico:hover,
 .so-ico a:hover {
-  color: #d95d39;
+  color: #d2f408;
   transform: scale(1.2);
   border-bottom: none;
 }
@@ -349,6 +370,10 @@ td {
   margin-top: 2.0rem;
 }
 
+.st-4 {
+  margin-top: 3.5rem;
+}
+
 .tab-1 {
   font-size: 2rem;
 }
@@ -363,7 +388,7 @@ td {
 
 .tab-title,
 .tab-title a {
-  font-family: 'Work Sans', sans-serif;
+  font-family: paralucent, sans-serif;
   font-size: 2rem;
   font-weight: 400;
   text-transform: lowercase;
@@ -375,11 +400,21 @@ td {
 
 /*** bootstrap override (main) ***/
 .active a {
-  color: #29267e!important;
+  color: #2323b5!important;
+}
+
+.active a:hover {
+  color: #2323b5!important;
 }
 
 .card-columns .card {
   margin-bottom: 1.25rem;
+}
+
+.card-img-overlay {
+  background-color: #ffffff!important;
+  color: #3d3d3d!important;
+  font-weight: 500!important;
 }
 
 .modal-backdrop {
@@ -406,22 +441,40 @@ td {
 .navbar a:link,
 .navbar a:hover,
 .navbar a:visited {
-  font-family: 'Work Sans', sans-serif;
+  font-family: paralucent, sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: lowercase;
   text-decoration: none;
   border-bottom: none;
+  leter-spacing: .3rem;
+}
+
+.navbar-brand {
+  display: block!important;
+}
+
+.navbar {
+  flex-direction: column;
 }
 
 .nav-link {
-  padding: 0.5rem .75rem!important;
+  padding: 0.5rem 1rem!important;
+}
+
+.nav-link:hover,
+.nav-link a:hover {
+  color: #d2f408!important;
 }
 
 @media (max-width: 768px) {
  .nav-link {
     text-align: center;
   }
+  .navbar {
+    flex-direction: unset;
+  }
+
 }
 
 /*** baguette box gallery ***/
