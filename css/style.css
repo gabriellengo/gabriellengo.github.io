@@ -164,6 +164,19 @@ td {
   margin: 1rem 0;
 }
 
+.descriptor {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.descriptor:first-letter {
+  color: #c1d22f;
+  font-family: paralucent, sans-serif;
+  font-weight: 500;
+  margin-right: .5rem;
+}
+
 .hvr-rmv,
 .hvr-rmv a,
 .hvr-rmv a:hover {
