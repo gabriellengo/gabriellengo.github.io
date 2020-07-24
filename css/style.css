@@ -166,7 +166,6 @@ td {
 
 .descriptor {
   display: inline-block;
-  margin-bottom: 1.5rem;
   margin-right: 1.5rem;
 }
 
@@ -175,6 +174,12 @@ td {
   font-family: paralucent, sans-serif;
   font-weight: 500;
   margin-right: .5rem;
+}
+
+@media (max-width: 768px) {
+  .descriptor {
+    display: block;
+  }
 }
 
 .hvr-rmv,
@@ -487,7 +492,16 @@ td {
   .navbar {
     flex-direction: unset;
   }
+}
 
+.view-pdf {
+  height: 800px;
+}
+
+@media (max-width: 768px) {
+  .view-pdf {
+    height: 325px;
+  }
 }
 
 /*** baguette box gallery ***/
