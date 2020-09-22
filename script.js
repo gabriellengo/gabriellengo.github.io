@@ -9,5 +9,10 @@ sr.reveal('.navbar', {delay: 200});
 sr.reveal('.container', {delay: 750});
 sr.reveal('.container-fluid', {delay: 750});
 
+// tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 // baguetteBox
 baguetteBox.run('.gallery-1');
