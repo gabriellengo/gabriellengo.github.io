@@ -1,16 +1,24 @@
+/* font import */
+@import url("https://use.typekit.net/dsn4jbe.css");
+
 /*** default attributes ***/
 html, body {
   background: #ffffff;
+}
+
+html, body, p, a {
   color: #222222;
-  font-family: source-code-pro, monospace;
-  font-size: .95rem;
+  font-family: degular, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: .01rem;
   font-weight: 400;
   font-style: normal;
   text-align: inherit;
   line-height: 1.5;
 }
 
-a, a:hover {
+a, a:hover, .navlink {
   transition: all .35s ease;
   -webkit-transition: all .35s ease;
   -o-transition: all .35s ease;
@@ -19,16 +27,12 @@ a, a:hover {
 }
 
 a {
-  font-family: source-code-pro, monospace;
-  color: #222222;
-  text-decoration: underline;
+  color: #4056FF;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #222222;
-  font-style: italic;
-  letter-spacing: .1rem;
-  text-decoration: underline;
+  color: #5743FF;
 }
 
 blockquote {
@@ -52,87 +56,48 @@ blockquote li:first-child {
   margin: 1.5rem 0 .75rem 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: degular, sans-serif
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* custom classes */
+.date {
+  color: #777777;
+  display: inline-block;
+  margin-bottom: .75em;
+  font-size: .8rem;
+}
+
+.name {
+  background-color: #E2FF16;
+}
+
 .navlink {
   color: #222222;
-  text-decoration: underline;
+  text-decoration: none;
   padding: .3rem;
   display: inline-block;
   margin-right: .8rem;
+  font-size: 1.5rem;
 }
 
-.n-a {
-  background-color: #C2FFF9;
+.navlink:hover {
+  transform: scale(1.2);
 }
 
-.n-b {
-  background-color: #EDDBFF;
-}
 
-.n-c {
-  background-color: #B5FFCE;
-}
-
-.n-d {
-  background-color: #FEFFB5;
-}
-
-.navlink:hover,
-.n-a:hover,
-.n-b:hover,
-.n-c:hover,
-.n-d:hover {
-  color: #111111;
-  font-style: italic;
-  text-decoration: underline;
-  letter-spacing: .1rem;
-}
-
-.nav-section {
+.section {
   margin: 2.5rem auto;
-}
-
-.job-card {
-  display: block;
-  margin-bottom: 2rem;
-  line-height: 1.2;
-}
-
-.job-date {
-  font-size: .75rem;
-  font-style: italic;
-  background-color: #FEFFB5;
-}
-
-.education-date {
-  font-size: .75rem;
-  font-style: italic;
-  background-color: #C2FFF9;
-}
-
-.intro {
-  font-family: source-code-pro, monospace;
-  font-weight: 500;
-  background: #ffffff;
-  margin-top: 6.5rem!important;
-}
-
-.intro h1 {
-  font-size: 3.2rem;
-  line-height: 3.5rem;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  line-height: 2.3rem;
-}
-
-.left-img {
-  padding-right: 1.2em;
 }
 
 @media (max-width: 576px) {
   .left-img {
     padding-right: 0em;
   }
+}
+
+.w33 {
+  width: 33%!important;
 }
