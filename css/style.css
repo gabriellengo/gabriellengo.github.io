@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.2);
 }
 
+.sidenav {
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: block;
+}
+
 
 .section {
   margin: 2.5rem auto;
@@ -101,3 +107,13 @@ h1, h2, h3, h4, h5, h6 {
 .w33 {
   width: 33%!important;
 }
+
+.grid-item {
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--width2 { width: 160px; }
+.grid-item--height2 { height: 140px; }

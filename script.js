@@ -16,3 +16,10 @@ $(function () {
 
 // baguetteBox
 baguetteBox.run('.gallery-1');
+
+// masonry
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
