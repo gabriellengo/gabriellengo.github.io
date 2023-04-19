@@ -1,5 +1,5 @@
 /* font import */
-@import url("https://use.typekit.net/dsn4jbe.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 /*** default attributes ***/
 html, body {
@@ -8,7 +8,7 @@ html, body {
 
 html, body, p, a {
   color: #222222;
-  font-family: degular, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1rem;
   font-style: normal;
   letter-spacing: .01rem;
@@ -27,12 +27,13 @@ a, a:hover, .navlink {
 }
 
 a {
-  color: #4056FF;
+  color: #222222;
   text-decoration: none;
+  font-style: italic;
 }
 
 a:hover {
-  color: #5743FF;
+  color: #0430D2;
 }
 
 blockquote {
@@ -57,7 +58,7 @@ blockquote li:first-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: degular, sans-serif
+  font-family: 'Space Grotesk', sans-serif
   font-style: normal;
   font-weight: 700;
 }
