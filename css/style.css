@@ -1,5 +1,5 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 /*** default attributes ***/
 html, body {
@@ -8,7 +8,7 @@ html, body {
 
 html, body, p, a {
   color: #222222;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-style: normal;
   letter-spacing: .01rem;
@@ -16,6 +16,12 @@ html, body, p, a {
   font-style: normal;
   text-align: inherit;
   line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  html, body, p, a {
+    font-size: .9rem;
+  }
 }
 
 a, a:hover, .navlink {
@@ -58,7 +64,7 @@ blockquote li:first-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif
+  font-family: 'Inter', sans-serif
   font-style: normal;
   font-weight: 700;
 }
@@ -96,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .section {
-  margin: 2.5rem auto;
+  margin: 2rem auto;
 }
 
 @media (max-width: 576px) {
@@ -118,3 +124,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-item--width2 { width: 160px; }
 .grid-item--height2 { height: 140px; }
+
+.coolcat {
+  width: 42%;
+  transition: transform .25s ease-in-out;
+  -webkit-transition: transform .25s ease-in-out;
+  -o-transition: transform .25s ease-in-out;
+  -moz-transition: transform .25s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.coolcat:hover {
+  transform: rotate(360deg);
+  filter: invert(1);
+}
